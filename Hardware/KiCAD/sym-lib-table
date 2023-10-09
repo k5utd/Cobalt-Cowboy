@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Cobalt_Cowboy")(type "KiCad")(uri "${KIPRJMOD}/Cobalt_Cowboy.kicad_sym")(options "")(descr ""))
+)
