@@ -68,9 +68,9 @@
   (pad "31" smd rect (at -1.25 -2.45) (size 0.3 0.85) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 2f681134-d7f3-4b56-9bf9-820f327e7be4))
   (pad "32" smd rect (at -1.75 -2.45) (size 0.3 0.85) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 827480fb-3178-4cba-87b8-6200459173c1))
   (pad "33" smd rect (at 0 0) (size 3.55 3.55) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ca8b7f87-08a3-41cb-99b7-237f41764a9b))
-  (model "CC1200RHBR.stp"
+  (model "${KIPRJMOD}/Cobalt_Cowboy.pretty/3dmodels/CC1200RHBR.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 0))
   )
 )
