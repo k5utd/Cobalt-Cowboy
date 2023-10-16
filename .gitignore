@@ -1,1 +1,6 @@
 Hardware/KiCAD/Cobalt-Cowboy-backups
+Hardware/KiCAD/*.kicad_prl
+Hardware/KiCAD/fp-info-cache
+Hardware/KiCAD/fp-lib-table
+Hardware/KiCAD/sym-lib-cache
+Hardware/KiCAD/sym-lib-table
