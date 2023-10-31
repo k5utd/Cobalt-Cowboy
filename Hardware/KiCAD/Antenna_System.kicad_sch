@@ -1322,7 +1322,7 @@
     (property "Reference" "J2" (at 241.3 90.4632 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_Coaxial" (at 241.3 93.0032 0)
+    (property "Value" "Conn_Coaxial_UHF" (at 241.3 93.0032 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal" (at 237.49 91.44 0)
