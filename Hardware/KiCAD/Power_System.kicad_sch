@@ -242,6 +242,11 @@
     (uuid 61be3ec6-b8dd-48c1-9ecd-8c02e1a600af)
   )
 
+  (text "Need to Add USB charging\n" (at 13.97 16.51 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid be316ac1-2880-4c56-a059-865b68a99bba)
+  )
+
   (symbol (lib_id "Device:Battery_Cell") (at 215.9 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3f979c1c-8d11-4066-9458-748de9d59512)
