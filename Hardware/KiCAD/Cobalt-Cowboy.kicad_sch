@@ -528,6 +528,10 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 766cdf37-bc22-42f5-8feb-52d2829d5d0b)
     )
+    (pin "3V3_Computing_Power" input (at 80.01 91.44 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid ea88315c-d9e2-46c5-b84f-95ea09de8f46)
+    )
     (instances
       (project "Cobalt-Cowboy"
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab" (page "3"))
@@ -621,6 +625,10 @@
     (pin "CC_SCLK" input (at 139.7 48.26 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid db2df517-ec38-429c-a2e3-e5dec6f4e8e8)
+    )
+    (pin "3V3_Comms_Power" input (at 165.1 40.64 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid ca95de39-19e1-451e-916d-711c8a603c69)
     )
     (instances
       (project "Cobalt-Cowboy"

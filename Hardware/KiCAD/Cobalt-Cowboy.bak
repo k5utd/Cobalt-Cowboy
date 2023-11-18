@@ -547,7 +547,7 @@
     (property "Value" "SA630D_01,118" (at 29.21 5.08 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (property "Footprint" "Cobalt_Cowboy:SOIC127P600X175-8N_SA630D_01,118" (at 29.21 -94.92 0)
+    (property "Footprint" "SOIC127P600X175-8N" (at 29.21 -94.92 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/SA630.pdf" (at 29.21 -194.92 0)
