@@ -990,6 +990,10 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 988d8b2f-466f-44cc-940a-197f432ca234)
   )
+  (hierarchical_label "3V3_Comms_Power" (shape input) (at 137.16 102.87 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9eefd02d-6e42-49ae-98a4-9fdf2e7f1dd7)
+  )
   (hierarchical_label "PA" (shape input) (at 146.05 77.47 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b88d1931-00b0-4938-96d8-f533e576dd21)
@@ -1521,34 +1525,6 @@
       (project "Mini17"
         (path "/c89c6552-5574-4959-bcaf-f05dfde21961/f4521ef1-9a41-474d-b880-30e1e54c8ecb"
           (reference "C23") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 137.16 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 54738d76-ee90-4571-8fc5-2a2f05d3af8d)
-    (property "Reference" "#PWR025" (at 137.16 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 137.16 97.79 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 137.16 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 137.16 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f3a3c775-9736-4ef2-a72d-d56e070a4855))
-    (instances
-      (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
-          (reference "#PWR025") (unit 1)
-        )
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "#PWR022") (unit 1)
         )
       )
     )
