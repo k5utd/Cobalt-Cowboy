@@ -1,4 +1,4 @@
-(footprint "QFN50P500X500X100-33N-D" (version 20221018) (generator pcbnew)
+(footprint "QFN50P500X500X100-33N-D_CC1200RHBRQFN50P500X500X100-33N-D_CC1200RHBRQFN50P500X500X100-33N-D_CC1200RHBR" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (descr "RHB0032E")
   (tags "Integrated Circuit")
@@ -7,7 +7,7 @@
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     (tstamp 614661f9-6798-490f-9f1f-25243ac1e862)
   )
-  (fp_text value "QFN50P500X500X100-33N-D" (at 0 0) (layer "F.SilkS") hide
+  (fp_text value "QFN50P500X500X100-33N-D_CC1200RHBRQFN50P500X500X100-33N-D_CC1200RHBRQFN50P500X500X100-33N-D_CC1200RHBR" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     (tstamp b45abbc2-45cc-42e2-96e8-c29a96506969)
   )
