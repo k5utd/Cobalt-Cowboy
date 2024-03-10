@@ -899,7 +899,7 @@
   (symbol (lib_id "pkl_device:pkl_C_Small") (at 116.84 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28d84cb4-8b0b-4006-8149-74c5ee92e916)
-    (property "Reference" "C12" (at 115.6716 45.9232 0)
+    (property "Reference" "C29" (at 115.6716 45.9232 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1u" (at 117.983 45.9232 0)
@@ -915,9 +915,6 @@
     (pin "2" (uuid 23c9b67c-29ee-476a-bca2-809101dc40c2))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "C12") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "C29") (unit 1)
         )
@@ -933,7 +930,7 @@
   (symbol (lib_id "pkl_device:pkl_C_Small") (at 116.84 39.37 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c89df3a-01cb-4798-b2f6-cd0c3df2aa44)
-    (property "Reference" "C12" (at 115.6716 37.0332 0)
+    (property "Reference" "C30" (at 115.6716 37.0332 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 117.983 37.0332 0)
@@ -949,9 +946,6 @@
     (pin "2" (uuid d79d1340-98e0-4188-aa8c-171aa9788e3a))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "C12") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "C30") (unit 1)
         )
@@ -967,7 +961,7 @@
   (symbol (lib_id "power:GND") (at 191.77 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5517dae5-c7f2-448b-8133-73f759efb025)
-    (property "Reference" "#PWR017" (at 191.77 64.77 0)
+    (property "Reference" "#PWR038" (at 191.77 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.897 62.8142 0)
@@ -982,9 +976,6 @@
     (pin "1" (uuid d5ae94de-4ac9-4da8-80b5-31f3bff995a3))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "#PWR038") (unit 1)
         )
@@ -1000,7 +991,7 @@
   (symbol (lib_id "pkl_device:pkl_C_Small") (at 81.28 57.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81f5c5d2-4a82-479a-990f-d76be381eb19)
-    (property "Reference" "C12" (at 80.1116 54.8132 0)
+    (property "Reference" "C28" (at 80.1116 54.8132 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1p" (at 82.423 54.8132 0)
@@ -1016,9 +1007,6 @@
     (pin "2" (uuid 33ea1250-4634-4ee7-98ed-2e2eac67e71c))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "C12") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "C28") (unit 1)
         )
@@ -1034,7 +1022,7 @@
   (symbol (lib_id "pkl_device:pkl_R_Small") (at 91.44 50.8 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f4c7b0d-9f1a-4c65-9983-ca3428843b98)
-    (property "Reference" "R1" (at 95.25 52.324 90)
+    (property "Reference" "R3" (at 95.25 52.324 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 91.44 53.467 90)
@@ -1050,9 +1038,6 @@
     (pin "2" (uuid 69b17043-54f9-4f95-8932-fc1f67aad819))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "R1") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "R3") (unit 1)
         )
@@ -1083,9 +1068,6 @@
     (pin "1" (uuid b5613afc-8ba4-4150-80d1-b800697905be))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
-          (reference "#PWR03") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "#PWR03") (unit 1)
         )
@@ -1096,7 +1078,7 @@
   (symbol (lib_id "power:GND") (at 76.2 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9958b277-802d-44a1-8ae8-d141865a63f0)
-    (property "Reference" "#PWR016" (at 76.2 66.04 0)
+    (property "Reference" "#PWR041" (at 76.2 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 64.0842 0)
@@ -1111,9 +1093,6 @@
     (pin "1" (uuid cf5827ea-eca5-4745-93f7-bc10dcabf61b))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "#PWR016") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "#PWR041") (unit 1)
         )
@@ -1129,7 +1108,7 @@
   (symbol (lib_id "power:GND") (at 121.92 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6e63aae-d9bf-49f9-92ef-1dac93751ccd)
-    (property "Reference" "#PWR017" (at 121.92 104.14 0)
+    (property "Reference" "#PWR026" (at 121.92 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 122.047 102.1842 0)
@@ -1144,9 +1123,6 @@
     (pin "1" (uuid d2b75707-3684-4a6f-acd6-161587c7e98d))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/d80d452c-0cd9-4253-b692-c2cdb4b1394b"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "#PWR026") (unit 1)
         )
@@ -1264,9 +1240,6 @@
     (pin "6" (uuid 60330abb-e14b-4b6f-851c-2571206f9cba))
     (instances
       (project "Cobalt-Cowboy"
-        (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
-          (reference "IC9") (unit 1)
-        )
         (path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39"
           (reference "IC9") (unit 1)
         )

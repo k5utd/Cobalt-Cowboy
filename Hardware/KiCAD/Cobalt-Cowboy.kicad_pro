@@ -491,6 +491,10 @@
     [
       "36b248bc-2a23-4171-b336-2df6d7e58962",
       "Keypad"
+    ],
+    [
+      "a223c7f8-9abc-45ba-bb7d-ed4a0b4bf54b",
+      "Amplifier_Assembly"
     ]
   ],
   "text_variables": {}

@@ -642,6 +642,11 @@
     (uuid d7e73b6a-57fa-48ac-8fb3-90f167527bdc)
   )
 
+  (text "TODO: need a switch and MOSFETs\n" (at 13.97 16.51 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 57cb3a1c-37c2-4572-8f94-6e8729412e53)
+  )
+
   (hierarchical_label "3V3_Power" (shape output) (at 76.2 119.38 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0b4ce661-80ef-4b36-983d-a78e2b0faa05)
