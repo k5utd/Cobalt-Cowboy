@@ -1,89 +1,4617 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 11209bb1-66dd-4005-b185-94094a600249)
-
-  (paper "A4")
-
-  (lib_symbols
-  )
-
-
-  (wire (pts (xy 38.1 114.3) (xy 152.4 114.3))
-    (stroke (width 0) (type default))
-    (uuid 00d5cb9b-63b5-4bdb-85b6-e222dc8c8131)
-  )
-  (wire (pts (xy 38.1 63.5) (xy 152.4 63.5))
-    (stroke (width 0) (type default))
-    (uuid 1ddf20d7-ba06-4140-b6f2-11d0cf779f03)
-  )
-  (wire (pts (xy 63.5 38.1) (xy 63.5 177.8))
-    (stroke (width 0) (type default))
-    (uuid 278ccf8f-1d23-4c4b-8c36-aa499116cb4b)
-  )
-  (wire (pts (xy 88.9 38.1) (xy 88.9 177.8))
-    (stroke (width 0) (type default))
-    (uuid 3bf82288-9515-4a49-a744-bc4ca1c323ae)
-  )
-  (wire (pts (xy 38.1 88.9) (xy 152.4 88.9))
-    (stroke (width 0) (type default))
-    (uuid 42425fe9-7337-4c14-b7d5-a5bf395504e4)
-  )
-  (wire (pts (xy 114.3 38.1) (xy 114.3 177.8))
-    (stroke (width 0) (type default))
-    (uuid 8ffb22a0-ecc2-4c91-8e47-a4fba49c1ca1)
-  )
-  (wire (pts (xy 139.7 38.1) (xy 139.7 177.8))
-    (stroke (width 0) (type default))
-    (uuid 92439d20-88f5-46c8-955c-ffd95f0eecaf)
-  )
-  (wire (pts (xy 38.1 139.7) (xy 152.4 139.7))
-    (stroke (width 0) (type default))
-    (uuid a954a1ff-3c4d-4624-aaba-a263847023b7)
-  )
-  (wire (pts (xy 38.1 165.1) (xy 152.4 165.1))
-    (stroke (width 0) (type default))
-    (uuid b120932f-4275-49b5-a9d9-34435e9047d2)
-  )
-
-  (text "TODO: Need buttons and diodes\n" (at 15.24 17.78 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid fd35d1cd-9179-4685-b4c0-01d8ee3b116d)
-  )
-
-  (hierarchical_label "ROW2" (shape input) (at 38.1 88.9 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 470c208b-874a-49af-9fce-10794210577f)
-  )
-  (hierarchical_label "ROW4" (shape input) (at 38.1 139.7 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 78e32d02-8b0a-43c5-9407-03f8a677f541)
-  )
-  (hierarchical_label "COL2" (shape input) (at 88.9 38.1 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 816315a2-b37c-4f60-9341-9faf2b138f84)
-  )
-  (hierarchical_label "COL4" (shape input) (at 139.7 38.1 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 93a67d2d-d17b-417a-ac24-fda66b3af40b)
-  )
-  (hierarchical_label "COL3" (shape input) (at 114.3 38.1 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a87a4a84-a76f-4392-b891-3553080cfbe6)
-  )
-  (hierarchical_label "ROW3" (shape input) (at 38.1 114.3 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b41557c4-f950-417f-bc34-d07af6ef9f4e)
-  )
-  (hierarchical_label "ROW5" (shape input) (at 38.1 165.1 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid c209cddb-4456-436c-8494-bba5d7b36bd2)
-  )
-  (hierarchical_label "COL1" (shape input) (at 63.5 38.1 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid e5632839-59cd-4f9a-bd05-110e0eefab6c)
-  )
-  (hierarchical_label "ROW1" (shape input) (at 38.1 63.5 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f4e1cd9a-5b73-45cf-aec5-4971d3b4941a)
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "11209bb1-66dd-4005-b185-94094a600249")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:D_Small_Filled"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D_Small_Filled"
+				(at -3.81 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Small_Filled_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "D_Small_Filled_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_Push_45deg"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push_45deg"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_45deg_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 125.73 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "007bcfe4-fffb-4294-ab26-bc241f49c829")
+	)
+	(junction
+		(at 151.13 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "078151d3-3052-4c9c-87aa-4ba57e45679e")
+	)
+	(junction
+		(at 130.81 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cd1ac2a-d47f-4cb0-8511-91590d30e667")
+	)
+	(junction
+		(at 125.73 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1195e29d-d877-40c1-9a42-c0e1d8cadf19")
+	)
+	(junction
+		(at 105.41 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16dcfd48-7ce6-47da-89c3-8361eec76945")
+	)
+	(junction
+		(at 105.41 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "206bec92-e496-44ea-b766-c8c51add3a64")
+	)
+	(junction
+		(at 156.21 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2979266a-e7ec-4795-a332-26b0d6bb064d")
+	)
+	(junction
+		(at 74.93 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b2065c5-b45b-4ef7-bb40-c6975de968be")
+	)
+	(junction
+		(at 100.33 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c72a4ce-17e4-43ef-9455-d514477c44b9")
+	)
+	(junction
+		(at 151.13 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36c5a4be-5031-4b4c-bbb1-2a2f8ed411f6")
+	)
+	(junction
+		(at 80.01 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "493c67ef-644f-4605-8b52-b992a9cf1741")
+	)
+	(junction
+		(at 74.93 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53ca9ed2-4a0c-4597-9f5e-07d09f91ba87")
+	)
+	(junction
+		(at 105.41 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ad7a9aa-953e-40ed-9617-3be2b44c8204")
+	)
+	(junction
+		(at 54.61 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b22ecd5-1ab0-42a2-a16a-c723aa1104ad")
+	)
+	(junction
+		(at 125.73 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6364d057-2a67-4dec-bf52-3ae61e1154ca")
+	)
+	(junction
+		(at 54.61 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66cc05f0-9b5e-41c1-986b-fc1d1a31bef8")
+	)
+	(junction
+		(at 74.93 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bb228a6-9664-464b-8961-21c3013814d5")
+	)
+	(junction
+		(at 54.61 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "717164c4-20f1-45b2-929d-52b349d92a0a")
+	)
+	(junction
+		(at 130.81 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88b38787-9a43-4774-830b-fec10a6eb3b5")
+	)
+	(junction
+		(at 130.81 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d1f791f-9ca7-4888-a9d9-5412b51de68b")
+	)
+	(junction
+		(at 130.81 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d780789-64ad-4d43-818a-4882793ddbe5")
+	)
+	(junction
+		(at 80.01 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac555dbc-7493-4669-964c-0fba5b334120")
+	)
+	(junction
+		(at 80.01 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3b13b01-7e36-434a-9202-f8f5dbe197d5")
+	)
+	(junction
+		(at 125.73 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bba4348c-2fac-4870-871c-053d5a702a14")
+	)
+	(junction
+		(at 74.93 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2beeb9d-50c2-47f6-a468-d432bc94c4b4")
+	)
+	(junction
+		(at 176.53 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c59e2d64-801e-4d47-887d-22c9be72cbd7")
+	)
+	(junction
+		(at 151.13 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce6daa49-7e55-45f9-869c-8ea0b57a0438")
+	)
+	(junction
+		(at 100.33 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0758fea-172a-4e37-abad-2964c150e72a")
+	)
+	(junction
+		(at 105.41 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8728b9b-50d1-4f81-a6cc-36cc5b48b12f")
+	)
+	(junction
+		(at 100.33 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfacc34f-f4df-4369-a01e-c2dddce42fed")
+	)
+	(junction
+		(at 80.01 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3b5e4a7-da02-4644-89d8-a9f7cabb0ef9")
+	)
+	(junction
+		(at 100.33 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e89edf53-12ad-44f6-88fb-91a27a50931a")
+	)
+	(junction
+		(at 54.61 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efe66bb7-c711-4c36-8e75-4af865c76c14")
+	)
+	(junction
+		(at 151.13 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb3f07c7-de70-41c4-9567-413a5c44955d")
+	)
+	(no_connect
+		(at 156.21 158.75)
+		(uuid "116f0ea4-efaa-4751-8c39-d8bef74211be")
+	)
+	(no_connect
+		(at 80.01 158.75)
+		(uuid "3fcfd072-d9bf-42c9-b33d-ac821acd56c5")
+	)
+	(no_connect
+		(at 54.61 158.75)
+		(uuid "72a6e9f5-7d49-43e8-8fb4-5d3c4d164bc3")
+	)
+	(no_connect
+		(at 181.61 90.17)
+		(uuid "7affd8cf-928d-4978-b866-095029849dfa")
+	)
+	(no_connect
+		(at 181.61 140.97)
+		(uuid "91dd9008-be84-47cc-b6e4-050520d6faa3")
+	)
+	(no_connect
+		(at 181.61 115.57)
+		(uuid "a6cbcc6b-1f97-4713-8caa-b5af5e157ee8")
+	)
+	(no_connect
+		(at 181.61 64.77)
+		(uuid "c4ed7509-f6eb-4172-bd0b-09c81e76025f")
+	)
+	(no_connect
+		(at 130.81 158.75)
+		(uuid "e7672a7d-ba27-4ca4-984a-ed0e75315a1d")
+	)
+	(no_connect
+		(at 105.41 158.75)
+		(uuid "fc881720-baf2-4d28-9190-42780d8e219c")
+	)
+	(wire
+		(pts
+			(xy 130.81 102.87) (xy 130.81 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02bd101f-d605-42d9-a57e-7d408d319b0d")
+	)
+	(wire
+		(pts
+			(xy 105.41 102.87) (xy 105.41 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080c6fb2-dee3-427f-a156-1afff6455d7f")
+	)
+	(wire
+		(pts
+			(xy 168.91 77.47) (xy 166.37 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b695a60-9528-4b73-ad23-3eb6778a873c")
+	)
+	(wire
+		(pts
+			(xy 105.41 128.27) (xy 110.49 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b71486c-7f73-4805-b5a8-5c5e2d8e5fd4")
+	)
+	(wire
+		(pts
+			(xy 72.39 95.25) (xy 74.93 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e046084-4d1b-44bf-b9c3-7820c4dcc68e")
+	)
+	(wire
+		(pts
+			(xy 92.71 153.67) (xy 92.71 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed31d36-fa9c-4214-adbb-52fd79c89393")
+	)
+	(wire
+		(pts
+			(xy 143.51 128.27) (xy 140.97 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ef6ee14-2947-49bd-8893-6b85a902cc2b")
+	)
+	(wire
+		(pts
+			(xy 123.19 146.05) (xy 125.73 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112d4e1e-e5a7-4921-9dea-1b35704a885d")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 118.11 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "141187aa-d3aa-4652-95c1-f2ac0f0762f8")
+	)
+	(wire
+		(pts
+			(xy 100.33 115.57) (xy 100.33 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14a26d87-4ae2-4abb-9255-a9aa8358e5a0")
+	)
+	(wire
+		(pts
+			(xy 125.73 140.97) (xy 125.73 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16bc5a9b-8dd4-46d1-8eb2-df9fd179395b")
+	)
+	(wire
+		(pts
+			(xy 151.13 115.57) (xy 181.61 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17289172-c57e-4780-bac5-7da5cd4357c3")
+	)
+	(wire
+		(pts
+			(xy 125.73 115.57) (xy 125.73 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1951b15f-b46d-431b-86f2-c11b4c6b8bc4")
+	)
+	(wire
+		(pts
+			(xy 67.31 153.67) (xy 67.31 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d7ab3d0-db82-4944-a1e9-155ef37ecca8")
+	)
+	(wire
+		(pts
+			(xy 130.81 128.27) (xy 135.89 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dfa7f03-7b22-4345-b48b-f8f98a7eea04")
+	)
+	(wire
+		(pts
+			(xy 105.41 128.27) (xy 105.41 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fd6b9e2-34c2-4b7a-b46a-bb8a280bcbed")
+	)
+	(wire
+		(pts
+			(xy 74.93 90.17) (xy 100.33 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2548c670-275c-4364-9139-cccc27339b2c")
+	)
+	(wire
+		(pts
+			(xy 118.11 77.47) (xy 118.11 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c3f7d96-2770-49ba-8b4e-4110b1259c5c")
+	)
+	(wire
+		(pts
+			(xy 67.31 153.67) (xy 64.77 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fa6d699-e858-4255-b908-b7d656fe457a")
+	)
+	(wire
+		(pts
+			(xy 105.41 153.67) (xy 110.49 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "316f3320-8dc3-4e5d-9801-61c3b0d257b4")
+	)
+	(wire
+		(pts
+			(xy 123.19 95.25) (xy 125.73 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ae4a15-ae39-4105-ba60-7f2bd977f485")
+	)
+	(wire
+		(pts
+			(xy 151.13 64.77) (xy 151.13 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31bf27e9-0738-4cd1-8a64-c610e7e58ac8")
+	)
+	(wire
+		(pts
+			(xy 100.33 115.57) (xy 125.73 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "374099c8-ccae-4e2d-b423-7fa3d369310a")
+	)
+	(wire
+		(pts
+			(xy 143.51 77.47) (xy 140.97 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e72147-91b1-43ef-8244-79953bf78c76")
+	)
+	(wire
+		(pts
+			(xy 125.73 90.17) (xy 151.13 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f73437-85b4-4b19-87e9-5d76cb424725")
+	)
+	(wire
+		(pts
+			(xy 80.01 102.87) (xy 80.01 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a301970-510c-448e-977f-55b08d376a2f")
+	)
+	(wire
+		(pts
+			(xy 67.31 77.47) (xy 64.77 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a42860f-d6ee-463a-9953-42a8289147af")
+	)
+	(wire
+		(pts
+			(xy 92.71 77.47) (xy 90.17 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4e70c7-1f58-45d7-9170-9621e118f321")
+	)
+	(wire
+		(pts
+			(xy 67.31 128.27) (xy 64.77 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a981526-cba3-424f-a4c4-49d33735785e")
+	)
+	(wire
+		(pts
+			(xy 118.11 77.47) (xy 115.57 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b0ca9e0-e710-4b26-809d-252007b2f14f")
+	)
+	(wire
+		(pts
+			(xy 123.19 69.85) (xy 125.73 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b617fd8-4b05-4ffc-840a-fb82e95ca947")
+	)
+	(wire
+		(pts
+			(xy 176.53 64.77) (xy 181.61 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c96e941-822b-4589-99f7-559b10d7ba14")
+	)
+	(wire
+		(pts
+			(xy 74.93 64.77) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7d85c5-e063-401f-a7ee-f1285f769c15")
+	)
+	(wire
+		(pts
+			(xy 105.41 153.67) (xy 105.41 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40df2150-631a-40f6-88c3-7bc705a1c7ab")
+	)
+	(wire
+		(pts
+			(xy 143.51 102.87) (xy 140.97 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "426e1abc-a73b-48ff-8542-f293939c36cc")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 90.17 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45871931-5c0b-4504-bea7-d6c16c52b954")
+	)
+	(wire
+		(pts
+			(xy 118.11 128.27) (xy 118.11 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4768105f-25e8-4149-b8a2-844377ee9474")
+	)
+	(wire
+		(pts
+			(xy 74.93 140.97) (xy 74.93 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f82111-0ea0-4905-8fb1-8f4b2b992078")
+	)
+	(wire
+		(pts
+			(xy 54.61 102.87) (xy 59.69 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ded8bb4-d84f-460f-83f7-f6df8e736a9d")
+	)
+	(wire
+		(pts
+			(xy 151.13 115.57) (xy 151.13 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50414d50-f654-41f7-94c1-ff2d0b867f74")
+	)
+	(wire
+		(pts
+			(xy 54.61 128.27) (xy 59.69 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51039dc5-92ef-4399-a9c8-0745d21c746e")
+	)
+	(wire
+		(pts
+			(xy 100.33 140.97) (xy 125.73 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51942cee-10b6-48d6-bf2f-8a7d7bb2020f")
+	)
+	(wire
+		(pts
+			(xy 151.13 140.97) (xy 151.13 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "519fbde8-4e00-4a10-a465-1552d2d36ebd")
+	)
+	(wire
+		(pts
+			(xy 80.01 153.67) (xy 80.01 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "526746dd-a5f0-4499-937d-cbbeb11c802a")
+	)
+	(wire
+		(pts
+			(xy 148.59 146.05) (xy 151.13 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53fea05f-4e80-4872-a9b4-fc201d96fd4d")
+	)
+	(wire
+		(pts
+			(xy 72.39 146.05) (xy 74.93 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55e26323-865a-4ad4-b9c1-223ad4b3955a")
+	)
+	(wire
+		(pts
+			(xy 130.81 102.87) (xy 135.89 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "589ad51d-6650-4ac0-897b-58ce0f4bf544")
+	)
+	(wire
+		(pts
+			(xy 74.93 115.57) (xy 100.33 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a0fd56-a5d3-420f-8171-e776777c8580")
+	)
+	(wire
+		(pts
+			(xy 130.81 77.47) (xy 130.81 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ab27d0-04dd-409f-a754-6624a6bdbde0")
+	)
+	(wire
+		(pts
+			(xy 72.39 69.85) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6445ecaa-c8bb-4b29-a4f2-c0aea414c77c")
+	)
+	(wire
+		(pts
+			(xy 105.41 39.37) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "655dc333-ac09-46f0-8d8d-96e240be3565")
+	)
+	(wire
+		(pts
+			(xy 125.73 140.97) (xy 151.13 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c62ea0-31b9-4fe5-b763-4dc0604d9ec6")
+	)
+	(wire
+		(pts
+			(xy 67.31 102.87) (xy 64.77 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65de9a60-25b6-498f-a5ae-6ef7eb895d00")
+	)
+	(wire
+		(pts
+			(xy 72.39 120.65) (xy 74.93 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "675a3462-7e78-4eb6-acf5-4fe2fbd6d83b")
+	)
+	(wire
+		(pts
+			(xy 74.93 64.77) (xy 100.33 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697f78c1-31cb-4104-a846-a93a659eb776")
+	)
+	(wire
+		(pts
+			(xy 105.41 77.47) (xy 105.41 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b5a2b7c-c1e3-4c6c-a5ae-5a546578dd92")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 115.57 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c52efce-370c-4317-82d1-08d840586b8b")
+	)
+	(wire
+		(pts
+			(xy 118.11 153.67) (xy 118.11 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ce287bd-9c2a-4ab6-9b0f-8fd74820b60f")
+	)
+	(wire
+		(pts
+			(xy 173.99 69.85) (xy 176.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d00d431-3cdd-4979-b8fd-8c8761db2b36")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 92.71 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70cea61e-57e3-428f-acb7-41ca8826c10b")
+	)
+	(wire
+		(pts
+			(xy 105.41 102.87) (xy 110.49 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7675c2d8-eea7-436c-b8c5-112bdfe790a7")
+	)
+	(wire
+		(pts
+			(xy 97.79 120.65) (xy 100.33 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a09e31-db65-4c62-95d2-7545b4b026f3")
+	)
+	(wire
+		(pts
+			(xy 100.33 64.77) (xy 100.33 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7703d8d5-c9b1-4506-bae5-0000ae6376a7")
+	)
+	(wire
+		(pts
+			(xy 130.81 153.67) (xy 135.89 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a490cae-f9e0-4420-8854-10312dbe4d1a")
+	)
+	(wire
+		(pts
+			(xy 29.21 64.77) (xy 74.93 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a818160-fea5-4b58-a3a2-62eb0cf1dc39")
+	)
+	(wire
+		(pts
+			(xy 100.33 90.17) (xy 125.73 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a8be513-ce65-4f9a-99e5-d40d3bb40dfa")
+	)
+	(wire
+		(pts
+			(xy 100.33 140.97) (xy 100.33 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b4718d0-1b6b-470f-99db-e5ea31b5dc71")
+	)
+	(wire
+		(pts
+			(xy 100.33 64.77) (xy 125.73 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bee2f25-7cab-496a-a211-0c0a52506111")
+	)
+	(wire
+		(pts
+			(xy 97.79 95.25) (xy 100.33 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81a5e713-8efe-44c8-968c-017afe5102af")
+	)
+	(wire
+		(pts
+			(xy 118.11 128.27) (xy 115.57 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8233ce5b-236f-4b6c-8085-5338f2ce0f94")
+	)
+	(wire
+		(pts
+			(xy 67.31 128.27) (xy 67.31 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83784284-563c-4ee0-b95a-1ad325c70375")
+	)
+	(wire
+		(pts
+			(xy 54.61 39.37) (xy 54.61 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8561679e-1f80-406f-bc17-d81d41a077a5")
+	)
+	(wire
+		(pts
+			(xy 148.59 69.85) (xy 151.13 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aa5936b-f4db-44b1-9056-0e000f905f0e")
+	)
+	(wire
+		(pts
+			(xy 148.59 120.65) (xy 151.13 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d3a4bd7-631b-46ec-8da7-560877d9392f")
+	)
+	(wire
+		(pts
+			(xy 118.11 153.67) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dbb0c09-568c-4105-88cc-5ccd8eb23c70")
+	)
+	(wire
+		(pts
+			(xy 29.21 115.57) (xy 74.93 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a3bbab-9900-483a-b6cb-f5b877572c82")
+	)
+	(wire
+		(pts
+			(xy 54.61 102.87) (xy 54.61 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94e6ba80-8dff-49a5-9641-c44ebdac556a")
+	)
+	(wire
+		(pts
+			(xy 92.71 128.27) (xy 92.71 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a6bae5-7b47-4010-99cd-1429ecaddbf0")
+	)
+	(wire
+		(pts
+			(xy 151.13 90.17) (xy 151.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0d00ec-6a0c-424e-af3b-d2313755f5f5")
+	)
+	(wire
+		(pts
+			(xy 123.19 120.65) (xy 125.73 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a034871e-3097-4c77-8017-c41b936729dd")
+	)
+	(wire
+		(pts
+			(xy 130.81 153.67) (xy 130.81 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2c0b7b3-4026-4970-a4a1-476d07cc2725")
+	)
+	(wire
+		(pts
+			(xy 125.73 64.77) (xy 125.73 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a459ec82-1a33-4670-bc6f-c9d86050afb4")
+	)
+	(wire
+		(pts
+			(xy 74.93 140.97) (xy 100.33 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4dfbf7a-a6ae-41d6-bc3d-5ed530220492")
+	)
+	(wire
+		(pts
+			(xy 80.01 128.27) (xy 85.09 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c0ed2b-0228-457e-8bc0-fe0936de04cc")
+	)
+	(wire
+		(pts
+			(xy 176.53 64.77) (xy 176.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7fef322-d600-47b2-b5a7-5237b3e5878b")
+	)
+	(wire
+		(pts
+			(xy 92.71 128.27) (xy 90.17 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a87ea47a-e7cc-4546-880a-6b6a0c302189")
+	)
+	(wire
+		(pts
+			(xy 92.71 153.67) (xy 90.17 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e6cf52-2ef0-41b3-947e-be196444e22a")
+	)
+	(wire
+		(pts
+			(xy 100.33 90.17) (xy 100.33 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4f90cc-cbf3-4fce-8fd5-0f27e2ab5d0b")
+	)
+	(wire
+		(pts
+			(xy 143.51 102.87) (xy 143.51 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa55dd29-923b-4524-89cd-7ce869549b24")
+	)
+	(wire
+		(pts
+			(xy 130.81 39.37) (xy 130.81 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad04e4df-7a8d-4344-98a0-13d66ff44be8")
+	)
+	(wire
+		(pts
+			(xy 80.01 102.87) (xy 85.09 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b016afdd-44f9-4453-86b9-420223c5c8eb")
+	)
+	(wire
+		(pts
+			(xy 105.41 77.47) (xy 110.49 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3dafd79-8595-4b94-b58c-7fdde1538056")
+	)
+	(wire
+		(pts
+			(xy 130.81 77.47) (xy 135.89 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a2d5ae-71fa-4c4a-8b60-4ad0dd1162c9")
+	)
+	(wire
+		(pts
+			(xy 151.13 64.77) (xy 176.53 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b708cd8a-68be-4b8e-964f-1d88a1aa0cc4")
+	)
+	(wire
+		(pts
+			(xy 54.61 128.27) (xy 54.61 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb1bfacb-a961-44c5-9d5e-931430760e20")
+	)
+	(wire
+		(pts
+			(xy 151.13 140.97) (xy 181.61 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcf026ae-f481-431b-b563-cfa0b8f51bc4")
+	)
+	(wire
+		(pts
+			(xy 80.01 128.27) (xy 80.01 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4528360-db02-40b2-ab76-2ce4c22bca17")
+	)
+	(wire
+		(pts
+			(xy 80.01 77.47) (xy 85.09 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59167f2-9c77-474c-9851-ac346d6d6309")
+	)
+	(wire
+		(pts
+			(xy 80.01 39.37) (xy 80.01 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6504979-fca4-41da-a379-93c8e41df4fa")
+	)
+	(wire
+		(pts
+			(xy 151.13 90.17) (xy 181.61 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb510d68-71cb-4985-8813-33ff54e05727")
+	)
+	(wire
+		(pts
+			(xy 125.73 115.57) (xy 151.13 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6ffa17-1529-4724-a497-1de8927beb61")
+	)
+	(wire
+		(pts
+			(xy 54.61 153.67) (xy 54.61 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce9127b6-bde1-4576-9e50-2617c6d53205")
+	)
+	(wire
+		(pts
+			(xy 67.31 102.87) (xy 67.31 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13a3ab4-5238-4bd8-9686-ae414b88f894")
+	)
+	(wire
+		(pts
+			(xy 74.93 90.17) (xy 74.93 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e7acc9-5035-4f9c-90a9-df01c6687630")
+	)
+	(wire
+		(pts
+			(xy 97.79 146.05) (xy 100.33 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d271bf58-c2a1-458d-ac06-f20758343172")
+	)
+	(wire
+		(pts
+			(xy 125.73 64.77) (xy 151.13 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27c8049-7db5-4954-ba93-a8acb14370b1")
+	)
+	(wire
+		(pts
+			(xy 143.51 153.67) (xy 143.51 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d71e8d33-e083-4604-a481-243247517c04")
+	)
+	(wire
+		(pts
+			(xy 148.59 95.25) (xy 151.13 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc18b5f3-9193-48d0-a303-08761cdf0370")
+	)
+	(wire
+		(pts
+			(xy 54.61 77.47) (xy 59.69 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df43d6a3-1df8-4b1c-b131-e2a95264be9a")
+	)
+	(wire
+		(pts
+			(xy 54.61 77.47) (xy 54.61 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfec0673-c4e5-449d-b09a-afd22b11a7cb")
+	)
+	(wire
+		(pts
+			(xy 130.81 128.27) (xy 130.81 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e45229a0-7ef2-43e2-a86a-bc80d965847a")
+	)
+	(wire
+		(pts
+			(xy 29.21 140.97) (xy 74.93 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e63a8c1e-bd72-4f87-8dd3-6a094f7065b1")
+	)
+	(wire
+		(pts
+			(xy 156.21 77.47) (xy 156.21 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e77d0aef-4701-4ecc-b33c-bd4d7a831456")
+	)
+	(wire
+		(pts
+			(xy 125.73 90.17) (xy 125.73 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d1ff1e-e617-41ed-b669-b0026c7e72ab")
+	)
+	(wire
+		(pts
+			(xy 168.91 77.47) (xy 168.91 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9b49de3-8ff0-4fd6-90c5-a005311a3567")
+	)
+	(wire
+		(pts
+			(xy 74.93 115.57) (xy 74.93 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaa8eab8-82cc-46d4-ae7f-32d74ae9603f")
+	)
+	(wire
+		(pts
+			(xy 143.51 128.27) (xy 143.51 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbee25c-16d9-4cd4-a949-60546500c834")
+	)
+	(wire
+		(pts
+			(xy 156.21 39.37) (xy 156.21 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeff9dd4-d4d1-4e70-8d9f-6bdc392ec352")
+	)
+	(wire
+		(pts
+			(xy 143.51 77.47) (xy 143.51 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe04dc4-5274-4a4d-bf20-435b3cebe369")
+	)
+	(wire
+		(pts
+			(xy 143.51 153.67) (xy 140.97 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f36d9e40-6553-4dfb-9f80-8788412ffabb")
+	)
+	(wire
+		(pts
+			(xy 97.79 69.85) (xy 100.33 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4762c55-1138-4e8b-9f97-7015fdde29a1")
+	)
+	(wire
+		(pts
+			(xy 29.21 90.17) (xy 74.93 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5ab8443-5af4-4e79-84cc-93d3760559d9")
+	)
+	(wire
+		(pts
+			(xy 92.71 77.47) (xy 92.71 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f71c3e5c-a296-4dae-9ab9-8fce0fe5697a")
+	)
+	(wire
+		(pts
+			(xy 156.21 77.47) (xy 161.29 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f773a1ee-1c39-45e6-8808-3a221c5bb8ee")
+	)
+	(wire
+		(pts
+			(xy 67.31 77.47) (xy 67.31 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ae517b-30bf-487a-8318-9e8a1095fc0f")
+	)
+	(wire
+		(pts
+			(xy 80.01 77.47) (xy 80.01 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa86f61c-3ac3-4eba-8a0b-18b4420ab2e6")
+	)
+	(wire
+		(pts
+			(xy 80.01 153.67) (xy 85.09 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc4eb94b-bbec-4d3f-a554-dd5e1b33d9e4")
+	)
+	(wire
+		(pts
+			(xy 54.61 153.67) (xy 59.69 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee0c994-3d61-4d7a-91ff-733abca8a161")
+	)
+	(text "TODO: Need buttons and diodes\n"
+		(exclude_from_sim no)
+		(at 15.24 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd35d1cd-9179-4685-b4c0-01d8ee3b116d")
+	)
+	(hierarchical_label "COL2"
+		(shape input)
+		(at 80.01 39.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "470c208b-874a-49af-9fce-10794210577f")
+	)
+	(hierarchical_label "COL4"
+		(shape input)
+		(at 130.81 39.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "78e32d02-8b0a-43c5-9407-03f8a677f541")
+	)
+	(hierarchical_label "ROW2"
+		(shape input)
+		(at 29.21 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "816315a2-b37c-4f60-9341-9faf2b138f84")
+	)
+	(hierarchical_label "ROW4"
+		(shape input)
+		(at 29.21 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93a67d2d-d17b-417a-ac24-fda66b3af40b")
+	)
+	(hierarchical_label "ROW3"
+		(shape input)
+		(at 29.21 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a87a4a84-a76f-4392-b891-3553080cfbe6")
+	)
+	(hierarchical_label "COL3"
+		(shape input)
+		(at 105.41 39.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b41557c4-f950-417f-bc34-d07af6ef9f4e")
+	)
+	(hierarchical_label "COL5"
+		(shape input)
+		(at 156.21 39.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c209cddb-4456-436c-8494-bba5d7b36bd2")
+	)
+	(hierarchical_label "ROW1"
+		(shape input)
+		(at 29.21 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5632839-59cd-4f9a-bd05-110e0eefab6c")
+	)
+	(hierarchical_label "COL1"
+		(shape input)
+		(at 54.61 39.37 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4e1cd9a-5b73-45cf-aec5-4971d3b4941a")
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 95.25 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0072fb88-7024-449d-8811-7adee5607516")
+		(property "Reference" "SW8"
+			(at 96.266 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2"
+			(at 96.52 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 95.25 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 95.25 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "361447f6-9680-4aa8-b63a-4d17b45fe93d")
+		)
+		(pin "2"
+			(uuid "4712b9e8-9fd3-4746-be87-c89c49ffd6cb")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 62.23 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0add4936-eccb-44d6-b688-f37ba77e2c48")
+		(property "Reference" "D4:1"
+			(at 62.23 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 62.23 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 62.23 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 62.23 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 62.23 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 62.23 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc8aae56-a2cd-4c48-93b6-b8d09b23719e")
+		)
+		(pin "2"
+			(uuid "e1d14872-4b8d-48d9-852a-71d4565b00aa")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D4:1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 120.65 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c7c0bcc-aec2-4139-9de2-440901f1ca4c")
+		(property "Reference" "SW17"
+			(at 121.666 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "9"
+			(at 121.92 152.146 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 120.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 120.65 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a706d7f-9e58-47b3-b1c6-3dad0c76d7d6")
+		)
+		(pin "2"
+			(uuid "357515f2-4166-49ae-b876-2859d980ce95")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 69.85 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c97ffe3-e1ad-4136-8b53-cf8496605ed7")
+		(property "Reference" "SW7"
+			(at 70.866 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1"
+			(at 71.12 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 69.85 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 69.85 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f487941-800b-4c1a-b8cc-831da5b3d815")
+		)
+		(pin "2"
+			(uuid "6a40eb10-9f96-4f6a-8ebf-b47f1c74ec48")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 69.85 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "120663fa-d0b0-4014-869d-5921768d5781")
+		(property "Reference" "SW15"
+			(at 70.866 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "7"
+			(at 71.12 152.146 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92065e17-6f1f-42a6-963c-6fa79e20b48e")
+		)
+		(pin "2"
+			(uuid "1c1773d5-0cfa-439a-8270-052528e80dce")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 163.83 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15143d74-5e6c-4bd5-b654-0170e4761bd7")
+		(property "Reference" "D1:5"
+			(at 163.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 163.83 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 163.83 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 163.83 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "655343d3-03fc-4a15-9069-52fa2170632a")
+		)
+		(pin "2"
+			(uuid "bf381696-1db2-4048-86d3-127d0e029689")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D1:5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 120.65 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1776e499-3831-4400-a2fb-dbe6d29b0e7f")
+		(property "Reference" "SW9"
+			(at 121.666 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3"
+			(at 121.92 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9daff28d-a0c5-4236-8e49-a2f7578ce743")
+		)
+		(pin "2"
+			(uuid "a485cdef-abb5-49f0-9835-4f9df8b46c1a")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 62.23 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21019697-346b-4f26-9174-c233604fffab")
+		(property "Reference" "D1:1"
+			(at 62.23 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 62.23 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 62.23 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 62.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6674965-73c4-4781-8093-1501a4024539")
+		)
+		(pin "2"
+			(uuid "d5941957-4340-466a-ad9e-0f9f5d87c0e6")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D1:1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 95.25 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "251a5aef-a0f3-464a-80d8-98070a987420")
+		(property "Reference" "SW16"
+			(at 96.266 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "8"
+			(at 96.52 152.146 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4e7cff0-1659-48f3-9259-8d66d4dfa88d")
+		)
+		(pin "2"
+			(uuid "c747d78f-058f-4619-a426-dfed5a8ff9c0")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 62.23 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2540e1b1-0bd3-46c2-b9f1-9e61c6f6d58b")
+		(property "Reference" "D3:1"
+			(at 62.23 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 62.23 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 62.23 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 62.23 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 62.23 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 62.23 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8845ac7-4544-4f5b-be89-fe05691ab922")
+		)
+		(pin "2"
+			(uuid "b90aeb97-2623-48b9-9daf-5f2718ce014b")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D3:1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 113.03 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "292ddd9d-bedf-4e61-8531-337400dc1dbd")
+		(property "Reference" "D2:3"
+			(at 113.03 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 113.03 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecde4918-0914-4db9-b84a-bd802aa4cdb1")
+		)
+		(pin "2"
+			(uuid "9502d29a-1bf7-437f-83c5-8947dc8a2de6")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D2:3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 87.63 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ba2957d-24d7-4122-ae22-c4015a297d5e")
+		(property "Reference" "D1:2"
+			(at 87.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 87.63 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 87.63 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 87.63 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 87.63 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e44b5d2-6b4b-41cc-aa0f-99914401101d")
+		)
+		(pin "2"
+			(uuid "56c56a37-fa75-4794-9b03-1cbe6a517bac")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D1:2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 146.05 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c9567a6-dc61-4a06-9358-df493e1418b3")
+		(property "Reference" "SW10"
+			(at 147.066 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "*"
+			(at 147.32 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 146.05 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 146.05 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ff70394-d285-447c-8bcd-7144bbdc2112")
+		)
+		(pin "2"
+			(uuid "ead2db6e-a354-4377-9502-398c5647f3d2")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 138.43 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f2fda22-6360-4421-8427-d64010dfeb42")
+		(property "Reference" "D4:4"
+			(at 138.43 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 138.43 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 138.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 138.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 138.43 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4c49283-3419-4db6-857b-8656bd5bad8d")
+		)
+		(pin "2"
+			(uuid "d38d0731-f19f-445a-98b0-7eaabe50c670")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D4:4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 69.85 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35587d2e-0667-4035-806b-89113a421371")
+		(property "Reference" "SW11"
+			(at 70.866 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4"
+			(at 71.12 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 69.85 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 69.85 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39b2b403-6ef6-4116-8ab9-276ffbbf9504")
+		)
+		(pin "2"
+			(uuid "91d3ce83-12b1-4719-9d8f-a0651af894c2")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 62.23 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3710807c-8819-4ae4-93d4-49a481252607")
+		(property "Reference" "D2:1"
+			(at 62.23 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 62.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 62.23 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 62.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 62.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 62.23 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66e098f9-079d-488f-8240-6ae85fc9a904")
+		)
+		(pin "2"
+			(uuid "aa727766-6847-4eb3-bae0-03b74f12c113")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D2:1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 69.85 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c89633c-a4f3-4b8d-b361-a0f0004792c3")
+		(property "Reference" "SW3"
+			(at 70.866 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MENU"
+			(at 71.12 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 69.85 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 69.85 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90bd6ff4-d754-4973-9533-5e9d288f167f")
+		)
+		(pin "2"
+			(uuid "e82b581b-493d-4412-b89a-c680d2367049")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 95.25 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53899c3f-dce5-4c6f-b1f7-ba266370128c")
+		(property "Reference" "SW12"
+			(at 96.266 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "5"
+			(at 96.52 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 95.25 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 95.25 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02c3b2cf-8dc9-4e86-b435-3dd27e263496")
+		)
+		(pin "2"
+			(uuid "af161015-72f0-4de0-937e-4ce63aad4281")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 87.63 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5617601e-4e60-43e6-9d33-951c7b9b75cf")
+		(property "Reference" "D3:2"
+			(at 87.63 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 87.63 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 87.63 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 87.63 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 87.63 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 87.63 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bd73d63-da95-4fa3-ab7d-fe2a64d459ee")
+		)
+		(pin "2"
+			(uuid "b1657581-9a0b-400c-a938-9ad84a8c49ee")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D3:2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 95.25 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5dcc3cbd-cf43-458f-a2ac-fceade47c1cd")
+		(property "Reference" "SW4"
+			(at 96.266 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "UP"
+			(at 96.52 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 95.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 95.25 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f263419e-1e89-4d34-9168-f8a6e7b12336")
+		)
+		(pin "2"
+			(uuid "0090193a-b45d-4f90-8f20-0b73329682ad")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 146.05 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f81b543-be2f-41ea-8955-cffff7991894")
+		(property "Reference" "SW6"
+			(at 147.066 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "EXIT"
+			(at 147.32 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 146.05 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 146.05 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe60cfa8-7e75-4afe-abda-25fc59ac337e")
+		)
+		(pin "2"
+			(uuid "956f8501-e459-4eb1-9ae7-915e259c5a58")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 171.45 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62420c49-469a-4390-9824-d5240dfcd723")
+		(property "Reference" "SW19"
+			(at 172.466 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PTT"
+			(at 172.72 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 171.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 171.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01e0d492-ba8b-4962-a1d3-d76396cb88d0")
+		)
+		(pin "2"
+			(uuid "032a25f9-803a-4098-9ca4-c3f5669c1952")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 113.03 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77a627c1-bbdf-4bd1-af8a-73fb3d915aaf")
+		(property "Reference" "D1:3"
+			(at 113.03 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 113.03 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 113.03 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 113.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0cd44c0-ce06-4552-9428-6a823c4d8707")
+		)
+		(pin "2"
+			(uuid "aed92b3e-4cb0-4e66-8d3f-ff7793ae7ead")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D1:3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 113.03 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8aeda3e3-27bd-46ed-b934-5e85b9f7e32e")
+		(property "Reference" "D4:3"
+			(at 113.03 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 113.03 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 113.03 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8d94892-69bf-4e7b-ab0f-bad360d2084a")
+		)
+		(pin "2"
+			(uuid "530819dd-bc2b-4a7c-8f56-365ac8ffecee")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D4:3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 113.03 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8efb2089-10f5-4796-8444-8f973cea69b8")
+		(property "Reference" "D3:3"
+			(at 113.03 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 113.03 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39860b8a-25fe-4930-bb1c-31b8488c8f4f")
+		)
+		(pin "2"
+			(uuid "59d53bf6-c0f2-4fc7-8e20-c4285294e7ff")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D3:3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 138.43 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "985b15b4-80c9-4eb1-aeb6-46589eff8329")
+		(property "Reference" "D1:4"
+			(at 138.43 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 138.43 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb53fb0e-13a9-4c30-b30a-82ccb8fa554e")
+		)
+		(pin "2"
+			(uuid "55d4ee84-c1a3-4541-a44a-664fddfaa358")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D1:4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 87.63 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6939e4a-6632-4fe1-bb0c-af8da032e781")
+		(property "Reference" "D4:2"
+			(at 87.63 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 87.63 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 87.63 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 87.63 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 87.63 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 87.63 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a70f4ab-6781-4e0f-bb41-66979c2661a8")
+		)
+		(pin "2"
+			(uuid "77f7cbb6-b707-4991-99ca-ae9303ec6bab")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D4:2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 146.05 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aadde588-316d-4b3a-bf2f-b99098157a97")
+		(property "Reference" "SW18"
+			(at 147.066 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "#"
+			(at 147.32 152.146 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "734e234e-3c37-4026-984c-2eadc73c598e")
+		)
+		(pin "2"
+			(uuid "20b78231-4f81-48a8-a4cb-45d7fb0fde1d")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 146.05 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3dd749a-29b9-42af-a8ec-7b02df8a49b6")
+		(property "Reference" "SW14"
+			(at 147.066 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 147.32 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 146.05 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 146.05 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60d8bcbc-2ad1-4f15-8ca8-19479ea69979")
+		)
+		(pin "2"
+			(uuid "5b698f0c-4a14-4ad6-8e91-2ab5404744cc")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 87.63 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce91ab25-7b57-49d3-96b2-e3effb2d6114")
+		(property "Reference" "D2:2"
+			(at 87.63 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 87.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 87.63 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 87.63 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f976672-9d9b-4a6c-97b4-ccaa5030fe2d")
+		)
+		(pin "2"
+			(uuid "71a3e0e3-8c79-41f5-8bc4-f1eb59c29c97")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D2:2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 120.65 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "daa1ac4e-0b59-4077-ab1c-68bd2213dfe1")
+		(property "Reference" "SW5"
+			(at 121.666 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DOWN"
+			(at 121.92 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 120.65 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0502145-9615-4c66-8120-ebf64094fd89")
+		)
+		(pin "2"
+			(uuid "997b74d2-5c8b-4f2e-a38d-54cca46200da")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 138.43 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e804d371-c248-4349-a5d8-e126ddd8ee6a")
+		(property "Reference" "D2:4"
+			(at 138.43 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 138.43 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 138.43 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 138.43 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 138.43 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 138.43 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7d6cf15-d2d6-46e8-a930-a832dd607dde")
+		)
+		(pin "2"
+			(uuid "5dca875f-3eb5-480b-99d0-2ecbcc8d7775")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D2:4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small_Filled")
+		(at 138.43 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9558ddd-3678-4f69-882e-d5da7fc9b671")
+		(property "Reference" "D3:4"
+			(at 138.43 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 138.43 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 138.43 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol, filled shape"
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 138.43 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f089d57-34df-4828-8f1a-e11f277b5728")
+		)
+		(pin "2"
+			(uuid "5ebd93d5-58cd-4ec1-a558-5122c4f1a48b")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "D3:4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_45deg")
+		(at 120.65 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed965000-fbb0-4d0b-ba91-3277652d6222")
+		(property "Reference" "SW13"
+			(at 121.666 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "6"
+			(at 121.92 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9be8a54b-5413-4783-b4dc-f38708cdf7a5")
+		)
+		(pin "2"
+			(uuid "7b1dfe78-ae91-4b9d-849c-411435728867")
+		)
+		(instances
+			(project "Cobalt-Cowboy"
+				(path "/60a68eb1-aa0f-414e-b03b-965ad6b52dab/1039084b-a0e1-47ac-823b-a237cfc3ed39/36b248bc-2a23-4171-b336-2df6d7e58962"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
