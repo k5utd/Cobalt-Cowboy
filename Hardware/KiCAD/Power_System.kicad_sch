@@ -5997,6 +5997,17 @@
 		)
 		(uuid 969e9827-f514-43ad-be89-496bd1c479e6)
 	)
+	(text "BMS Single-Cell"
+		(exclude_from_sim no)
+		(at 16.256 75.184 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "27b903de-1077-4ba4-8d15-5b2836915dfd")
+	)
 	(text "Regulated 3.3V\nUsed by Communications System"
 		(exclude_from_sim no)
 		(at 178.054 72.898 0)
